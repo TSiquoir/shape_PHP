@@ -6,9 +6,10 @@ class Square extends Shape
 
     private $side;
 
-    public function __construct($side)
+    public function __construct($side, $name)
     {
         $this->side = $side;
+        parent::__construct($name);
     }
 
     public function perimeter()
